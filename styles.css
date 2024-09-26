@@ -1,0 +1,110 @@
+/* Sandal and Green Theme */
+img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 80%;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4ecd8; /* Sandal color */
+    color: #006400; /* Dark Green */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #8b4513; /* SaddleBrown color */
+    color: white;
+}
+
+#searchBar {
+    width: 90%;
+    padding: 10px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #8b4513;
+    padding-top: 60px;
+    transition: 0.3s;
+}
+
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#menu ul li {
+    padding: 10px 20px;
+    color: white;
+}
+
+#menuBtn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #006400;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.product {
+    width: 45%;
+    background-color: white;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product h3 {
+    color: #006400;
+}
+
+.product p {
+    color: #8b4513;
+}
+
+/* Media Query for mobile responsiveness */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    #products .product {
+        width: 100%;
+    }
+}
+
+/* Menu slide out effect */
+.menu-active #menu {
+    left: 0;
+}
