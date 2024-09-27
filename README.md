@@ -1,1 +1,1 @@
-farming-app.netlify.ap
+farming-app.netlify.app
